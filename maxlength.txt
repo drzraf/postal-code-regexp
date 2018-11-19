@@ -1,0 +1,3 @@
+10
+# Current maximum postal code size is 10
+# Countries: US, AS, IR
