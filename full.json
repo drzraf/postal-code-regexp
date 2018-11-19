@@ -318,8 +318,8 @@
     "Note": "May only be required for bulk mail.",
     "Country": "Chile",
     "ISO": "CL",
-    "Format": "NNNNNNN (NNN-NNNN)",
-    "Regex": "^\\d{7}\\s\\(\\d{3}-\\d{4}\\)$"
+    "Format": "NNNNNNN",
+    "Regex": "^\\d{7}$"
   },
   {
     "Note": "A postal code or youbian (邮编) in a subordinate division will have the same first two digits as its governing one (see Political divisions of China. The postal services in Macau or Hong Kong Special Administrative Regions remain separate from Mainland China, with no post code system currently used.",
@@ -423,8 +423,8 @@
     "Note": "With Slovak Republic, Poštovní směrovací číslo (PSČ) - postal routing number.",
     "Country": "Czech Republic",
     "ISO": "CZ",
-    "Format": "NNNNN (NNN NN)",
-    "Regex": "^\\d{5}\\s\\(\\d{3}\\s\\d{2}\\)$"
+    "Format": "NNN NN",
+    "Regex": "^\\d{3}\\s\\d{2}$"
   },
   {
     "Note": "Numbering follows the dispatch of postal trains from Copenhagen.[3] Also used by Greenland, e.g.: DK-3900 Nuuk.",
@@ -584,20 +584,6 @@
     "Note": "",
     "Country": "Georgia",
     "ISO": "GE",
-    "Format": "NNNN",
-    "Regex": "^\\d{4}$"
-  },
-  {
-    "Note": "Postleitzahl (PLZ)",
-    "Country": "Germany",
-    "ISO": "DE",
-    "Format": "NN",
-    "Regex": "^\\d{2}$"
-  },
-  {
-    "Note": "Postleitzahl (PLZ)",
-    "Country": "Germany",
-    "ISO": "DE",
     "Format": "NNNN",
     "Regex": "^\\d{4}$"
   },
@@ -774,7 +760,7 @@
     "Country": "Isle of Man",
     "ISO": "IM",
     "Format": "CCN NAA, CCNN NAA",
-    "Regex": "^[Ii[Mm]\\d{1,2}\\s\\d\\[A-Z]{2}$"
+    "Regex": "^Ii[Mm]\\d{1,2}\\s\\d\\[A-Z]{2}$"
   },
   {
     "Note": "Postcode is always written BEFORE the city/place name, i.e. to the Right in Hebrew or Arabic script - to the Left in Latin script.",
@@ -1452,8 +1438,8 @@
     "Note": "with Czech Republic from west to east, Poštové smerovacie číslo (PSČ) - postal routing number.",
     "Country": "Slovakia",
     "ISO": "SK",
-    "Format": "NNNNN (NNN NN)",
-    "Regex": "^\\d{5}\\s\\(\\d{3}\\s\\d{2}\\)$"
+    "Format": "NNN NN",
+    "Regex": "^\\d{3}\\s\\d{2}$"
   },
   {
     "Note": "",
@@ -1494,8 +1480,8 @@
     "Note": "",
     "Country": "South Korea",
     "ISO": "KR",
-    "Format": "NNNNNN (NNN-NNN)",
-    "Regex": "^\\d{6}\\s\\(\\d{3}-\\d{3}\\)$"
+    "Format": "NNNNNN",
+    "Regex": "^\\d{5}$"
   },
   {
     "Note": "First two indicate the province, range 01-52",
@@ -1536,8 +1522,8 @@
     "Note": "",
     "Country": "Sweden",
     "ISO": "SE",
-    "Format": "NNNNN (NNN NN)",
-    "Regex": "^\\d{5}\\s\\(\\d{3}\\s\\d{2}\\)$"
+    "Format": "NNN NN",
+    "Regex": "^\\d{3}\\s\\d{2}$"
   },
   {
     "Note": "With Liechtenstein, ordered from west to east. In Geneva and other big cities, like Basel, Bern, Zurich, there may be one or two digits after the name of the city when the generic City code (1211) is used instead of the area-specific code (1201, 1202...), e.g.: 1211 Geneva 13. The digit identifies the post office. This addressing is generally used for P.O. box deliveries.",
@@ -1691,7 +1677,7 @@
     "Country": "United States",
     "ISO": "US",
     "Format": "NNNNN (optionally NNNNN-NNNN)",
-    "Regex": "^\\b\\d{5}\\b(?:[- ]{1}\\d{4})?$"
+    "Regex": "^\\d{5}([- ]\\d{4})?$"
   },
   {
     "Note": "",
