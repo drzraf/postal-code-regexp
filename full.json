@@ -28,11 +28,11 @@
     "Regex": "^\\d{5}$"
   },
   {
-    "Note": "U.S. ZIP codes (range 96799)",
+    "Note": "U.S. ZIP codes",
     "Country": "American Samoa",
     "ISO": "AS",
-    "Format": "NNNNN (optionally NNNNN-NNNN or NNNNN-NNNNNN)",
-    "Regex": "^\\d{5}(-{1}\\d{4,6})$"
+    "Format": "NNNNN",
+    "Regex": "^96799$"
   },
   {
     "Note": "Each parish now has its own post code.",
@@ -66,8 +66,8 @@
     "Note": "Codigo Postal Argentino (CPA), where the first A is the province code as in ISO 3166-2:AR, the four numbers are the old postal codes, the three last letters indicate a side of the block. Previously NNNN which &#10;o the minimum requirement as of 2006.",
     "Country": "Argentina",
     "ISO": "AR",
-    "Format": "1974-1998 NNNN; From 1999 ANNNNAAA",
-    "Regex": "^\\d{4}|[A-Za-z]\\d{4}[a-zA-Z]{3}$"
+    "Format": "ANNNN(AAA)?",
+    "Regex": "^[A-Z]\\d{4}([A-Z]{0,3})?$"
   },
   {
     "Note": "Previously used NNNNNN system inherited from former Soviet Union.",
@@ -88,7 +88,7 @@
     "Country": "Ascension island",
     "ISO": "AC",
     "Format": "AAAANAA one code: ASCN 1ZZ",
-    "Regex": "^[Aa][Ss][Cc][Nn]\\s{0,1}[1][Zz][Zz]$"
+    "Regex": "^[Aa][Ss][Cc][Nn] ?[1][Zz][Zz]$"
   },
   {
     "Note": "In general, the first digit identifies the state or territory.",
@@ -137,7 +137,7 @@
     "Country": "Barbados",
     "ISO": "BB",
     "Format": "CCNNNNN",
-    "Regex": "^[Aa][Zz]\\d{5}$"
+    "Regex": "^BB*\\d{5}$"
   },
   {
     "Note": "Retained system inherited from former Soviet Union.",
@@ -221,14 +221,14 @@
     "Country": "British Antarctic Territory",
     "ISO": "",
     "Format": "BIQQ 1ZZ",
-    "Regex": "^[Bb][Ii][Qq]{2}\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Bb][Ii][Qq]{2} ?[1][Zz]{2}$"
   },
   {
     "Note": "UK territory, but not UK postcode.",
     "Country": "British Indian Ocean Territory",
     "ISO": "IO",
     "Format": "AAAANAA one code: BBND 1ZZ",
-    "Regex": "^[Bb]{2}[Nn][Dd]\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Bb]{2}[Nn][Dd] ?[1][Zz]{2}$"
   },
   {
     "Note": "Specifically, VG1110 through VG1160[1]",
@@ -284,7 +284,7 @@
     "Country": "Canada",
     "ISO": "CA",
     "Format": "ANA NAN",
-    "Regex": "^(?=[^DdFfIiOoQqUu\\d\\s])[A-Za-z]\\d(?=[^DdFfIiOoQqUu\\d\\s])[A-Za-z]\\s{0,1}\\d(?=[^DdFfIiOoQqUu\\d\\s])[A-Za-z]\\d$"
+    "Regex": "^[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJKLMNPRSTVWXYZ] ?\\d[ABCEGHJKLMNPRSTVWXYZ]\\d$"
   },
   {
     "Note": "The first digit indicates the island.",
@@ -424,7 +424,7 @@
     "Country": "Czech Republic",
     "ISO": "CZ",
     "Format": "NNN NN",
-    "Regex": "^\\d{3}\\s\\d{2}$"
+    "Regex": "^\\d{3} ?\\d{2}$"
   },
   {
     "Note": "Numbering follows the dispatch of postal trains from Copenhagen.[3] Also used by Greenland, e.g.: DK-3900 Nuuk.",
@@ -515,7 +515,7 @@
     "Country": "Falkland Islands",
     "ISO": "FK",
     "Format": "AAAANAA one code: FIQQ 1ZZ",
-    "Regex": "^[Ff][Ii][Qq]{2}\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Ff][Ii][Qq]{2} ?[1][Zz]{2}$"
   },
   {
     "Note": "Self-governing territory within the Kingdom of Denmark, but not Danish postcode.",
@@ -606,14 +606,14 @@
     "Country": "Gibraltar",
     "ISO": "GI",
     "Format": "GX11 1AA",
-    "Regex": "^[Gg][Xx][1]{2}\\s{0,1}[1][Aa]{2}$"
+    "Regex": "^[Gg][Xx][1]{2} ?[1][Aa]{2}$"
   },
   {
     "Note": "",
     "Country": "Greece",
     "ISO": "GR",
     "Format": "NNN NN",
-    "Regex": "^\\d{3}\\s{0,1}\\d{2}$"
+    "Regex": "^\\d{3} ?\\d{2}$"
   },
   {
     "Note": "Part of the Danish postal code system.",
@@ -641,7 +641,7 @@
     "Country": "Guam",
     "ISO": "GU",
     "Format": "NNNNN",
-    "Regex": "^\\d{5}$"
+    "Regex": "^969\\d{2}$"
   },
   {
     "Note": "The first two numbers identify the department, the third number the route and the last two the office.",
@@ -655,7 +655,7 @@
     "Country": "Guernsey",
     "ISO": "GG",
     "Format": "AAN NAA, AANN NAA",
-    "Regex": "^[A-Za-z]{2}\\d\\s{0,1}\\d[A-Za-z]{2}$"
+    "Regex": "^[A-Za-z]{2}\\d ?\\d[A-Za-z]{2}$"
   },
   {
     "Note": "",
@@ -787,15 +787,15 @@
     "Note": "See also Japanese addressing system.",
     "Country": "Japan",
     "ISO": "JP",
-    "Format": "NNNNNNN (NNN-NNNN)",
-    "Regex": "^\\d{7}\\s\\(\\d{3}-\\d{4}\\)$"
+    "Format": "NNN-NNNN",
+    "Regex": "^\\d{3}-\\d{4}$"
   },
   {
     "Note": "UK-format postcode.",
     "Country": "Jersey",
     "ISO": "JE",
     "Format": "CCN NAA",
-    "Regex": "^[Jj][Ee]\\d\\s{0,1}\\d[A-Za-z]{2}$"
+    "Regex": "^[Jj][Ee]\\d ?\\d[A-Za-z]{2}$"
   },
   {
     "Note": "Deliveries to PO Boxes only.",
@@ -879,7 +879,7 @@
     "Country": "Lebanon",
     "ISO": "LB",
     "Format": "NNNN NNNN",
-    "Regex": "^\\d{4}\\s{0,1}\\d{4}$"
+    "Regex": "^\\d{4} ?\\d{4}$"
   },
   {
     "Note": "",
@@ -977,7 +977,7 @@
     "Country": "Malta",
     "ISO": "MT",
     "Format": "AAANNNN (AAA NNNN)",
-    "Regex": "^[A-Za-z]{3}\\s{0,1}\\d{4}$"
+    "Regex": "^[A-Za-z]{3} ?\\d{4}$"
   },
   {
     "Note": "U.S. ZIP codes. Range 96960 - 96970.",
@@ -1068,7 +1068,7 @@
     "Country": "Montserrat",
     "ISO": "MS",
     "Format": "MSR 1110-1350",
-    "Regex": "^[Mm][Ss][Rr]\\s{0,1}\\d{4}$"
+    "Regex": "^[Mm][Ss][Rr] ?\\d{4}$"
   },
   {
     "Note": "",
@@ -1117,7 +1117,7 @@
     "Country": "Netherlands",
     "ISO": "NL",
     "Format": "NNNN AA",
-    "Regex": "^\\d{4}\\s{0,1}[A-Za-z]{2}$"
+    "Regex": "^\\d{4} ?[A-Za-z]{2}$"
   },
   {
     "Note": "Overseas Department of France. French codes used. Range 98800 - 98890.",
@@ -1243,7 +1243,7 @@
     "Country": "Pitcairn Islands",
     "ISO": "PN",
     "Format": "AAAANAA one code: PCRN 1ZZ",
-    "Regex": "^[Pp][Cc][Rr][Nn]\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Pp][Cc][Rr][Nn] ?[1][Zz]{2}$"
   },
   {
     "Note": "",
@@ -1313,7 +1313,7 @@
     "Country": "Saint Helena",
     "ISO": "SH",
     "Format": "STHL 1ZZ",
-    "Regex": "^[Ss][Tt][Hh][Ll]\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Ss][Tt][Hh][Ll] ?[1][Zz]{2}$"
   },
   {
     "Note": "",
@@ -1474,7 +1474,7 @@
     "Country": "South Georgia and the South Sandwich Islands",
     "ISO": "GS",
     "Format": "SIQQ 1ZZ",
-    "Regex": "^[Ss][Ii][Qq]{2}\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Ss][Ii][Qq]{2} ?[1][Zz]{2}$"
   },
   {
     "Note": "",
@@ -1607,7 +1607,7 @@
     "Country": "Tristan da Cunha",
     "ISO": "SH",
     "Format": "TDCU 1ZZ",
-    "Regex": "^[Tt][Dd][Cc][Uu]\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Tt][Dd][Cc][Uu] ?[1][Zz]{2}$"
   },
   {
     "Note": "",
@@ -1635,7 +1635,7 @@
     "Country": "Turks and Caicos Islands",
     "ISO": "TC",
     "Format": "TKCA 1ZZ",
-    "Regex": "^[Tt][Kk][Cc][Aa]\\s{0,1}[1][Zz]{2}$"
+    "Regex": "^[Tt][Kk][Cc][Aa] ?[1][Zz]{2}$"
   },
   {
     "Note": "",
