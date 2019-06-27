@@ -214,7 +214,7 @@
     "Country": "Brazil",
     "ISO": "BR",
     "Format": "NNNNN-NNN (NNNNN from 1971 to 1992)",
-    "Regex": "^\\d{5}-\\d{3}$"
+    "Regex": "^\\d{5}-?\\d{3}$"
   },
   {
     "Note": "Single code used for all addresses.",
