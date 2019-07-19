@@ -284,7 +284,7 @@
     "Country": "Canada",
     "ISO": "CA",
     "Format": "ANA NAN",
-    "Regex": "^[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJKLMNPRSTVWXYZ] ?\\d[ABCEGHJKLMNPRSTVWXYZ]\\d$"
+    "Regex": "^[ABCEGHJKLMNPRSTVXYabceghjklmnprstvxy]\\d[ABCEGHJKLMNPRSTVWXYZabceghjklmnprstvwxyz] ?\\d[ABCEGHJKLMNPRSTVWXYZabceghjklmnprstvwxyz]\\d$"
   },
   {
     "Note": "The first digit indicates the island.",
