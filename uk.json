@@ -1,0 +1,58 @@
+[
+  {
+    "Note": "One code",
+    "Country": "Ascension island",
+    "ISO": "AC",
+    "Format": "ASCN 1ZZ",
+    "Regex": "^ASCN 1ZZ$"
+  },
+  {
+    "Note": "One code",
+    "Country": "British Indian Ocean Territory",
+    "ISO": "IO",
+    "Format": "BBND 1ZZ",
+    "Regex": "^BBND 1ZZ$"
+  },
+  {
+    "Note": "UK territory, but not UK postcode",
+    "Country": "Falkland Islands",
+    "ISO": "FK",
+    "Format": "FIQQ 1ZZ",
+    "Regex": "^FIQQ 1ZZ$"
+  },
+  {
+    "Note": "One code",
+    "Country": "Pitcairn Islands",
+    "ISO": "PN",
+    "Format": "PCRN 1ZZ",
+    "Regex": "^PCRN 1ZZ$"
+  },
+  {
+    "Note": "One code",
+    "Country": "British Antarctic Territory",
+    "ISO": "",
+    "Format": "BIQQ 1ZZ",
+    "Regex": "^BIQQ 1ZZ$"
+  },
+  {
+    "Note": "One code",
+    "Country": "South Georgia and the South Sandwich Islands",
+    "ISO": "GS",
+    "Format": "SIQQ 1ZZ",
+    "Regex": "^SIQQ 1ZZ$"
+  },
+  {
+    "Note": "One code",
+    "Country": "Saint Helena, Ascension and Tristan da Cunha",
+    "ISO": "SH",
+    "Format": "TDCU/ASCN/STHL 1ZZ",
+    "Regex": "^(TDCU|ASCN|STHL) ?1(ZZ|zz)$"
+  },
+  {
+    "Note": "One code",
+    "Country": "Turks and Caicos Islands",
+    "ISO": "TC",
+    "Format": "TKCA 1ZZ",
+    "Regex": "^TKCA 1ZZ$"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "Note": "U.S. ZIP codes",
+    "Country": "American Samoa",
+    "ISO": "AS",
+    "Format": "96799",
+    "Regex": "^96799$"
+  },
+  {
+    "Note": "U.S. ZIP codes. Range 96910 - 96932.",
+    "Country": "Guam",
+    "ISO": "GU",
+    "Format": "969NN",
+    "Regex": "^969\\d{2}$"
+  },
+  {
+    "Note": "U.S. ZIP codes. Range 96960 - 96970.",
+    "Country": "Marshall Islands",
+    "ISO": "MH",
+    "Format": "969NN",
+    "Regex": "^969\\d{2}$"
+  },
+  {
+    "Note": "U.S. ZIP codes. Range 96950 - 96952.",
+    "Country": "Northern Mariana Islands",
+    "ISO": "MP",
+    "Format": "969NN",
+    "Regex": "^969\\d{2}$"
+  },
+  {
+    "Note": "U.S. ZIP codes. All locations 96940.",
+    "Country": "Palau",
+    "ISO": "PW",
+    "Format": "96940",
+    "Regex": "^96940$"
+  },
+  {
+    "Note": "U.S. ZIP codes. ZIP codes 006XX for NW PR, 007XX for SE PR, in which XX designates the town or post office and 009XX for the San Juan Metropolitan Area, in which XX designates the area or borough of San Juan. The last four digits identify an area within the post office. For example 00716-2604: 00716-for the east section of the city of Ponce and 2604 for Aceitillo St. in the neighborhood of Los Caobos. US Post office is changing the PR address format to the American one: 1234 No Name Avenue, San Juan, PR 00901.",
+    "Country": "Puerto Rico",
+    "ISO": "PR",
+    "Format": "00(679)NN",
+    "Regex": "^00[679]\\d{2}$"
+  },
+  {
+    "Note": "U.S. ZIP codes. Range 00801 - 00851.",
+    "Country": "U.S. Virgin Islands",
+    "ISO": "VI",
+    "Format": "008NN",
+    "Regex": "^008\\d{2}$"
+  }
+]
