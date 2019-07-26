@@ -697,7 +697,7 @@
     "Country": "Iran",
     "ISO": "IR",
     "Format": "NNNNN-NNNNN",
-    "Regex": "^\\d{5}-\\d{5}$"
+    "Regex": "^\\d{5}(-?\\d{5})?$"
   },
   {
     "Note": "",
@@ -1054,7 +1054,7 @@
     "Country": "Netherlands",
     "ISO": "NL",
     "Format": "NNNN AA",
-    "Regex": "^\\d{4} ?[A-Za-z]{2}$"
+    "Regex": "^\\d{4} ?[A-Z]{2}$"
   },
   {
     "Note": "Overseas Department of France. French codes used. Range 98800 - 98890.",
