@@ -56,11 +56,11 @@
     "Regex": ""
   },
   {
-    "Note": "Codigo Postal Argentino (CPA), where the first A is the province code as in ISO 3166-2:AR, the four numbers are the old postal codes, the three last letters indicate a side of the block. Previously NNNN which &#10;o the minimum requirement as of 2006.",
+    "Note": "https://www.correoargentino.com.ar/formularios/cpa",
     "Country": "Argentina",
     "ISO": "AR",
     "Format": "ANNNN(AAA)?",
-    "Regex": "^[A-Z]\\d{4}([A-Z]{0,3})?$"
+    "Regex": "^[A-HJ-NP-Z]\\d{4}([A-Z]{3})?$"
   },
   {
     "Note": "Previously used NNNNNN system inherited from former Soviet Union.",
