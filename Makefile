@@ -7,7 +7,7 @@ short.json: $(SOURCES)
 fmt.json: $(SOURCES)
 	jq -cr 'map(select(.Regex != "" and .ISO != "")) | map({(.ISO): [.Format, .Regex]}) | add' $^ | jq -csS 'add' >| $@
 json-schema.json: $(SOURCES)
-	jq -cr 'map(select(.Regex != "" and .ISO != "")) | map({"if":{"properties":{"country":{"type":"string","const":.ISO}}},"then":{"properties":{"zip":{"type": "string","pattern":.Regex}}}})' $^ \
+	jq -cr 'map(select(.Regex != "" and .ISO != "")) | map({"if":{"required":["country"],"properties":{"country":{"type":"string","const":.ISO}}},"then":{"properties":{"zip":{"type": "string","pattern":.Regex}}}})' $^ \
 		| jq -csS '{"$$id":"file://schemas/world-postcodes.json","type":"object","$$defs":{"cp":{"type":"object","allOf":add}}}' >| $@
 
 ar-provinces.json:
