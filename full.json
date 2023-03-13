@@ -718,7 +718,7 @@
     "Country": "Isle of Man",
     "ISO": "IM",
     "Format": "CCN NAA, CCNN NAA",
-    "Regex": "^Ii[Mm]\\d{1,2} \\d\\[A-Z]{2}$"
+    "Regex": "^[Ii][Mm]\\d{1,2} \\d[A-Z]{2}$"
   },
   {
     "Note": "Postcode is always written BEFORE the city/place name, i.e. to the Right in Hebrew or Arabic script - to the Left in Latin script.",
